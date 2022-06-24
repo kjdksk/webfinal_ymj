@@ -1,0 +1,154 @@
+body { 
+    background-color: #b5a789;
+    font-family:      Georgia, "Times New Roman", Times, serif;
+    font-size: large;
+    margin:           0px;
+  }
+  
+  div#tableContainer {
+      display: table;
+      border-spacing: 10px;
+      margin-top: 30px;
+  }
+  #cont{
+    background: url(../image/bk/dola.jpg) repeat;
+    padding-top: 25px;
+    height: 600px;
+    background-color: #fff;
+  }
+  div#tableRow {
+      display: table-row;
+  }
+  
+  section#aihaojianjie {
+      display: table-cell;
+      background-color: #efe5d0;
+      width: 20%;
+      padding: 15px;
+      vertical-align: top;
+  }
+  
+  /* added section#blog for blog */
+  section#main, section#blog {
+    display: table-cell;
+    background:       #efe5d0 url(../image/bk/woniu.gif) top left;
+    font-size:        105%;
+    padding:          15px;
+    vertical-align: top;
+  }
+  
+  footer {
+    background-color: #fbfcea;
+    color:            #573c03;
+    text-align:       center;
+    padding:          15px;
+    margin: 0px 10px 10px 10px;
+    font-size:        90%;
+  }
+  
+  h1 {
+    font-size:        120%;
+    color:            #954b4b;
+    margin-top: 30px;
+    font-weight: 2000;
+  }
+
+  h2 { font-size: 110%; }
+  p {
+    /* 换了一个适合中文的字体 */
+    font-family:Arial,Helvetica,sans-serif;font-size:100%;  }
+  a:link {
+    color:            #b76666;
+    text-decoration:  none;
+    border-bottom:    thin dotted #b76666;
+  }
+  a:visited {
+    color:            #675c47;
+    text-decoration:  none;
+    border-bottom:    thin dotted #675c47;
+  }
+  
+#ukee {
+    /* 绝对定位 */
+	position: absolute;
+	top: 500px;
+	right: 10px;
+}
+#pp {
+    /* 绝对定位 */
+	position: absolute;
+	top: 1500px;
+	right: 10px;
+}  
+#lunhua {
+    /* 绝对定位 */
+	position: absolute;
+	top: 2500px;
+	right: 10px;
+}  
+#lanqiu {
+    /* 绝对定位 */
+	position: absolute;
+	top: 3100px;
+	right: 10px;
+}  
+#sanda {
+    /* 绝对定位 */
+	position: absolute;
+	top: 3800px;
+	right: 10px;
+}  
+#wangyou {
+    /* 绝对定位 */
+	position: absolute;
+	top: 4800px;
+	right: 10px;
+}  
+.footer{
+  height: 25px;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px 100px;
+  position: relative;
+  background-color:  rgb(75, 143, 120);
+}
+.footer{
+cursor: pointer;
+}
+
+.info,.copyright{
+font-size: 14px;
+color: #000408;
+line-height: 25px;
+}
+/* 动态滚动小元素 */
+.footer .scroll{
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 5px;
+border:2px solid #eaeaea;
+/* background-color: rgba(216, 16, 109,0.6); */
+position: absolute;
+left: 5%;
+top: -25px;
+z-index: 10;
+animation: scrollA infinite 20s linear alternate;
+}
+/* 有趣的小元素滚动 这里参考了网上的一些美化方式 */
+@keyframes scrollA {
+0% {left: 5%;transform: rotate(180deg);};
+10% {left: 5%;transform: rotate(270deg);}
+20% {left: 5%;transform: rotate(450deg);}
+25% {left: 10%;transform: rotate(540deg);}
+30% {left: 20%;transform: rotate(720deg);}
+35% {left: 30%;transform: rotate(900deg);}
+40% {left: 40%;transform: rotate(1080deg);}
+45% {left: 50%;transform: rotate(1260deg);}
+50% {left: 60%;transform: rotate(1440deg);}
+55% {left: 70%;transform: rotate(1620deg);}
+60% {left: 80%;transform: rotate(1800deg);}
+80% {left: 90%;transform: rotate(2610deg);}
+90% {left: 90%;transform: rotate(2340deg);}
+100% {left: 90%;transform: rotate(2520deg);}
+}

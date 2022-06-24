@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(244, 180, 191);
+    background-image: url(../image/bk/leaves.jpg);
+}
+#aud{
+    /* 播放控件不显示 */
+   display: none;
+
+}
+.lzc_timeline {
+    width: 1000px;
+    margin:0px auto;
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+  .lzc_timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    /* 直线 */
+    background: #e92a09;
+    left: 20px;
+    margin-left: -10px;
+  }
+  .lzc_timeline > li {
+    position: relative;
+  }
+  .lzc_timeline > li .lzc_time {
+    display: block;
+    position: absolute;
+  }
+  .lzc_timeline > li .lzc_time span {
+    display: block;
+    text-align: right;
+  }
+  .lzc_timeline > li .lzc_time span:first-child {
+    font-size: 8px;
+    color: #fbc0c0;
+  }
+  .lzc_timeline > li .lzc_time span:last-child {
+    font-size: 12px;
+    color: #3594cb;
+  }
+  .lzc_timeline > li:nth-child(odd) .lzc_time span:last-child {
+    color: #6cbfee;
+  }
+  .lzc_timeline > li .lzc_label {
+    margin: 0 8px 8px 30px;
+    /* 气泡颜色 */
+    background: #f4cbcb;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    height: 100px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+  }
+  .lzc_timeline > li:nth-child(odd) .label {
+    background: #579dc5;
+  }
+  .lzc_timeline > li .lzc_label h2 {
+    font-size: 16px;
+    text-shadow: rgba(7, 84, 152, 0.71) 1px 1px 1px;
+  }
+  .lzc_timeline > li .lzc_label:after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #afdcf8;
+    border-width: 10px;
+    top: 10px;
+  }
+  .lzc_timeline > li:nth-child(odd) .lzc_label:after {
+    border-right-color: #afdcf8;
+  }
+  .lzc_timeline > li .lzc_icon {
+    width: 10px;
+    height: 10px;
+    font-family: "ecoico";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    color: #fff;
+    background: #46a4da;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #afdcf8;
+    text-align: center;
+    left: 32px;
+    top: 15px;
+    margin: 0 0 0 -25px;
+  }
+  .lzc_blogpic {
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-right: 20px;
+  }
+  .lzc_timeline li .lzc_time {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+  }
+  .lzc_timeline li:hover .lzc_icon {
+    box-shadow: 0 0 0 3px #ececec;
+  }
+  .lzc_timeline li:hover .lzc_time {
+    background: #afdcf8;
+    border-radius: 20px 0 0 20px;
+  }
+  .lzc_timeline li:hover .lzc_time span {
+    color: #fff;
+  }

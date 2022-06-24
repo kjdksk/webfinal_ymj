@@ -1,0 +1,97 @@
+#nav {
+    background-color: rgb(255, 183, 48);;
+}
+#container{
+	margin:0px;
+	padding:0px;	/* 用背景图片填补#left的空白，又不影响#right */
+	position: relative;
+	background-color: #FCEAA9;
+	border-top: 1px solid #FDB050;
+}
+h3{
+    text-align: center;
+    padding: 30px;
+    font-size: x-large;
+
+}
+#left{
+	position:absolute;
+	top:20px;
+	left:0px;
+	margin:0px;
+	width: 320px;
+    background-color: #FCEAA9;
+}
+#middle{
+	position:relative;
+	padding:1px 15px 10px 15px;
+    /* 这里的margin根据左右两边块的宽度进行调节与下面190px对应 */
+	margin:0px 300px 0px 260px;
+	font-size:13px;
+	background-color: #fbffe9;
+	/* background-image: url(../image/bk/dola.jpg); */
+	background-repeat: no-repeat;
+}
+#middle2{
+    text-align: center;
+    line-height: 200%;
+}
+#middle p{
+    padding: top 30px;
+    font-size: larger;
+}
+#right{
+	position:absolute;
+	top:0px;
+	right:0px;
+	margin:0px;
+	width: 300px;
+	padding:20px 0px 20px 0px;
+	font: size 40px;
+	background-color: #FCEAA9;
+}
+#left ul{
+	list-style:none;
+	margin:1em 20px 0px 0px;
+	padding:0px 0px 15px 22px;
+}
+#left li{
+	border-bottom:1px dotted #B2BCC6;
+	margin-bottom:0.3em;
+}
+#left h2,#right h2{
+	font:110% Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+    font-size: larger;
+	color:#000407;
+	padding:0px 5px 0px 12px;
+	text-decoration:underline;
+}
+#middle h4{
+	text-decoration:underline;
+	color:#00aa17;
+	padding-top:15px;
+	font-size:16px;
+}
+ 
+#right p{
+	/* 文本对齐 */
+    text-align: left;
+	padding:0px 15px 0px 15px;
+    /* 行距 */
+    line-height: 30px;
+}
+#right ul{
+	list-style:none;
+	margin:1em 20px 0px 0px;
+	padding:0px 0px 15px 22px;
+}
+#right li{
+	border-bottom:1px dotted #B2BCC6;
+	margin-bottom:0.3em;
+}
+#aud{
+    /* 播放控件不显示 */
+   display: none;
+
+}

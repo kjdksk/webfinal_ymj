@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>应敏婕的主页</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="shouye">
+    <div class="header_con">
+        <h1>
+            &#128516 欢迎来到应敏婕的个人网页
+        </h1>
+        <!-- 弄一个表单让主页看起来更丰富 这里没有后端响应-->
+        <form action="">
+            <input type="text" class="search" value="在这里输入你要搜索的信息">
+            <div>
+                <input type="button" class="btn">
+            </div>
+        </form>
+
+    </div>
+</div>
+    <div id="nav">
+        <!-- 导航栏内容 -->
+        <div class="nav_con">
+        <ul>
+            <!-- attention----个人网页主题是彩色的  首页主题绿色护眼-->
+            <!-- 这里运用彩色内联样式给每个表格上色 -->
+            <!-- 每个表格的颜色对应链接网页的颜色主题 -->
+            <li style="background-color: rgb(125, 202, 171);"><a href="main.html">网站首页</a></li>
+            <li style="background-color: tomato;"><a href="education.html">教育背景</a></li>
+            <li style="background-color: rgb(246, 189, 198);"><a href="everydaylife.html">日常生活</a></li>
+            <li style="background-color:   #efe5d0;"><a href="hobby.html">兴趣爱好</a></li>
+            <li style="background-color: #FCEAA9;"><a href="mylog.html">我的日志</a></li>
+            <li style="background-color:rgb(143, 220, 251) ;"><a href="friendmsg.html">好友留言</a></li>
+        </ul></div>
+    </div>
+    <!-- 主页的平铺部分 -->
+    <!-- 一共一个大盒子，分为左右两栏 -->
+    <!-- 左侧是头像和简介，右侧是格言 -->
+    <div id="container_1">
+        <div class="inner">
+            <div id="cont_1_1">
+                <!-- 设置图片尺寸 -->
+         <img id="person" width="200" height="200" src="../image/chaos/person.jpg" alt="个人照片">
+<p ><table class="table"><tr>
+  <!-- 表格设置信息栏 -->
+  <!-- 左边一列右对齐 右边一列左对齐 -->
+  <!-- 这里出现一个问题，css中设置margin和textalign都是无效的，这里最后采用内联的样式，直接放到列表标签里右对齐 -->
+    <b><td align="right" class="www">
+      姓    名：
+    </td></b>
+    <td>
+         应敏婕 
+    </td>
+  </tr>
+  <tr><b>
+    <td align="right" class="www">
+      年    龄：
+    </td>
+  </b>
+    
+    <td>
+         20岁
+    </td>
+  </tr>
+  <tr><b>
+     <td align="right" class="www">
+     专    业：
+    </td>
+   
+  </b>
+    <td>
+         大数据管理与应用
+    </td>
+  </tr>
+  <tr><b>
+     <td align="right" class="www">
+      政治面貌：
+    </td>
+   
+  </b>
+    <td>
+         预备党员
+    </td>
+  </tr>
+  <tr>
+    <b>
+         <td align="right" class="www">
+      个人标签：
+    </td>
+    </b>
+   
+    <td>
+       学习、音乐
+    </td>
+  </tr>
+
+</table></p>
+<p font="small" class="jianli">  <a href="../image/chaos/jianli.png">点击查看简历</a></p>
+
+            </div>
+            <div id="cont_1_2">
+                <img id="xijinping" src="../image/bk/xijinping.jpg" alt="惊醒格言">
+
+            </div>
+            </div>
+    </div>
+    <!-- 添加了一个背景音乐 -->
+    <!-- 进网页开始播放 自动循环播放 -->
+    <!-- css已设置播放控件不显示，播放需要浏览器的媒体权限 -->
+    <audio src="../studio/raimbow.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto" loop="true"></audio>
+      <div class='footer'>
+        <span class="scroll"></span>
+        <span class="copyright">From Minjie Ying</span>
+        <el-drawer
+          <p class='info'>
+            电话：18871530224
+            邮箱：yingminjie@tom.com<br/>
+          </p>
+        </el-drawer>
+</body>
+</html>

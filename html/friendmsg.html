@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好友留言</title>
+
+    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <div class="shouye">
+        <div class="header_con">
+            <h1>
+                &#128513 欢迎来到应敏婕的留言板
+            </h1>
+            <!-- 弄一个表单让主页看起来更丰富 这里没有后端响应-->
+            <form action="">
+                <input type="text" class="search" value="在这里输入你要搜索的信息">
+                <div>
+                    <input type="button" class="btn">
+                </div>
+            </form>
+    
+        </div>
+    </div>
+        <div id="nav">
+            <!-- 导航栏内容 -->
+            <div class="nav_con">
+            <ul>
+                <!-- attention----个人网页主题是彩色的  首页主题绿色护眼-->
+                <!-- 这里运用彩色内联样式给每个表格上色 -->
+                <!-- 每个表格的颜色对应链接网页的颜色主题 -->
+                <li style="background-color: rgb(143, 220, 251);"><a href="main.html">网站首页</a></li>
+                <li style="background-color: rgb(143, 220, 251);"><a href="education.html">教育背景</a></li>
+                <li style="background-color: rgb(143, 220, 251);"><a href="everydaylife.html">日常生活</a></li>
+                <li style="background-color:   rgb(143, 220, 251);"><a href="hobby.html">兴趣爱好</a></li>
+                <li style="background-color: rgb(143, 220, 251);"><a href="mylog.html">我的日志</a></li>
+                <li style="background-color:rgb(143, 220, 251) ;"><a href="friendmsg.html">好友留言</a></li>
+            </ul></div>
+        </div>
+    <!-- 两个不同定位的表情包 第一个使用绝对定位 -->
+    <div id="xiaoyu1">
+		<img src="../image/logo/aba.jpeg" 
+			alt="啊吧啊吧小鱼左">
+	</div>
+
+    <!-- 留言信息表单 -->
+    <div id="xinxi">
+    <form action="" method="post" class="biaodan">
+        <!-- 这里暂时没有后端响应 将标题放入表单中看作整体-->
+        <!-- <label> 标签为 input 元素定义标注（标记） -->
+         <div class="biaodan">  <!-- 给表单加一个块 便于设置整体居中 -->
+            <label>
+            <span>你的称呼 :</span>
+            <input id="name" type="text" name="name" placeholder="这里留下您的昵称" />
+        </label>
+        <label>
+            <span>你的邮箱 :</span>
+            <input id="email" type="email" name="email" placeholder="可以联系到您的邮箱" />
+        </label>
+     
+        <label>
+            <span>想说的话 :</span>
+            <!-- textarea可以调整大小 -->
+            <textarea id="message" name="message" placeholder="给小婕留个言"></textarea>
+        </label>
+        <label>
+            <span>留言类型 :</span>
+            <!-- selcet下拉选择 -->
+            <select name="selection">
+                <option value="好友寄语">好友寄语</option>
+                <option value="紧急留言">紧急事务</option>
+                <option value="日常留言">日常留言</option>
+            </select>
+        </label>
+        <label>
+            <span>&nbsp;</span>
+            <!-- button为上述留言表单的信息保存按钮 -->
+            <input type="button" class="button" value="保存" />
+        </label></div>
+    </form></div>
+
+    <div id="alltext">
+        <!-- 留言板模块 -->
+        <!-- 这里模拟上述外部填写信息后显示出来的内容 -->
+    <div id="container">
+        <!-- 将所有留言显示出的联系人和留言内容放到一个container块   留言文字内容直接显示-->
+        <!-- 联系人头像设置为float类 留言内容设置为content类 -->
+        <div class="float">
+            <img src="../image/headph/chenzheyuan.jpeg">
+        </div>
+        <div id="float">
+            <div class="content">
+                “听说星加坡很大，美丽得像天堂一样。”<br>
+                “是的，星加坡很美，但是没有钱，即使是天堂也会变成地狱的。”<br>
+                丨刘以鬯《椰风蕉雨》 ​​​
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="float">
+            <img src="../image/headph/chichangxu.jpeg">
+        </div>
+        <div id="float">
+            <div class="content">
+                秋天在8字外边徘徊。太阳喜欢白昼，月亮也喜欢白昼；但是，黑夜永不寂寞。谁躺在记忆的床上，因为有人善于玩弄虚伪.<br>
+                丨刘以鬯《酒徒》
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="float">
+            <img src="../image/headph/pengyuyan.jpg">
+        </div>
+        <div id="float">
+            <div class="content">
+                初到城市的彷徨者有点不解地仰头看着一扇一扇完全被禁锢的门窗。<br>
+                他忽然想念起故乡可以一眼看得很远很远的家，可以看到山脉尾端蜿蜒入海的曲折，和晴朗时那一线艳蓝得像死掉了一般的海水。
+                <br>丨蒋勋《岛屿独白》
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="float">
+            <img src="../image/headph/songjiang.jpeg">
+        </div>
+        <div id="float">
+            <div class="content">
+                如果他不这样愤怒就坚强不起来，如果坚强不起来他就会落得无比脆弱，好像失去生命的力量。这亦利亦害的愤怒，逼得他就要发狂，每一刻这些完好整齐的物品看在眼中，都显得那么虚伪无知，像是的被一种捏造出来的信念所编排，永远不能粉碎。
+                <br>丨黄国峻《是或一点也不》
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="float">
+            <img src="../image/headph/zengshunxi.jpeg">
+        </div>
+        <div id="float">
+            <div class="content">
+               死生契阔,与子成说。执子之手,与子偕老。——《诗经邶风击鼓》 
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- 创建一个链接到作者的qq空间便于留言的拓展 -->
+<!-- 点击表情包即进入空间 -->
+<div id="qqkj">
+    <a href="https://user.qzone.qq.com/2192815443" title="点击这里去她空间留言"><img src="../image/headph/lianhong.jpeg" alt="可爱小人"></a>
+</div>
+<!-- 尾部 -->
+<div class='footer'>
+    <span class="scroll"></span>
+    <span class="copyright">From Minjie Ying</span>
+    <el-drawer
+      <p class='info'>
+        电话：18871530224
+        邮箱：yingminjie@tom.com<br/>
+      </p>
+    </el-drawer>
+      <audio src="../studio/zhuiguangzhe.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto" loop="true"></audio>
+
+    
+</body>
+</html>

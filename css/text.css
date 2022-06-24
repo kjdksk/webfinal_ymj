@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(246, 246, 246);
+    background-image: url("../image/bk/blu.jpeg");
+
+}
+/* 样式重写 */
+
+/* 这里对表情包用两种定位，根据自己的电脑屏幕大小调整网页上小鱼表情包的位置 */
+#xiaoyu1 {
+    /* 绝对定位 */
+	position: absolute;
+	top: 120px;
+	left: 80px;
+/* 根据标题宽度调整位置 */
+}
+
+
+#alltext {
+    /* 留言内容全部居中 */
+    margin:30px auto;
+    width: 1000px;
+}
+.biaodan {
+    text-align: center;
+}
+#name,#email,#message {
+    /* 表单三个输入框颜色 */
+    background-color: rgb(233, 241, 241);
+}
+h1 {
+    background-image: url(../image/bk/qianv.jpeg);
+    background-repeat: repeat-x;
+    /* x轴方向平铺 */
+    background-color: rgb(205, 222, 237);
+    margin-top: 0px;
+    font-size: 180px;   /*文字大小*/
+	color:#00030c;  /*文字颜色*/
+	text-shadow: 0 8px 10px #1a2741;  /*文字阴影*/                  
+	font-weight: bolder;  /*文字宽度*/                              
+	text-align: left;  /*居中*/  
+}
+.container{
+    padding: 10px;
+    /* 字体 */
+    font-style: initial;
+}
+img{
+    margin:0px -120px 20px 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    /* 设置图片头像旋转角度 */
+    -webkit-transform : rotate(4deg);
+    -webkit-transition: -webkit-transform 1s lin;
+
+}
+.content{
+    /* 留言文本内容样式 */
+    width: 800px;
+    height: 90px;
+    position: relative;
+    left: 160px;
+    background-color: rgba(150, 178, 255, 0.655);
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 10px;
+    /* 自动换行 */
+    word-wrap: break-word;
+}
+.float{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+#qqkj {
+    position: fixed;
+    top: 550px;
+    left: 0px;
+}
+
+#footer {
+    font-size: 50%;
+    text-align: center;
+    line-height: normal;
+    margin-top: 30px;
+  }
+  #aud{
+    /* 播放控件不显示 */
+   display: none;
+
+}

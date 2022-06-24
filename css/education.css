@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(255, 178, 178);
+}
+#jianli {
+    width: 656px;
+    height: 800px;
+    
+}
+/* 重写样式 */
+div#container_1 div.inner div#cont_1_2 {
+    width: 656px;
+    height: 800px;
+    float: left;
+    background-color: #fff;
+    border-top: 4px solid #79a3db;
+    
+}
+div#container_1 {
+    background: url(../image/bk/aixin.jpeg) repeat;
+    padding-top: 25px;
+    height: 600px;
+    background-color: #fff;
+  
+
+}
+div#container_1 div.inner div#cont_1_1 {
+    width: 344px;
+    height: 800px;
+    float: left;
+    background-color: #cde8e6;
+    border-top: 4px solid #537fb8;
+    
+}
+.footer{
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 100px;
+    position: relative;
+    background-color:  rgb(75, 143, 120);
+}
+.footer{
+  cursor: pointer;
+}
+
+.info,.copyright{
+  font-size: 14px;
+  color: #000408;
+  line-height: 25px;
+}
+/* 动态滚动小元素 */
+.footer .scroll{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border:2px solid #eaeaea;
+  /* background-color: rgba(216, 16, 109,0.6); */
+  position: absolute;
+  left: 5%;
+  top: -25px;
+  z-index: 10;
+  animation: scrollA infinite 20s linear alternate;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+table td, table th
+{
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+}
+#container {
+    width: 750px;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .xiao {
+    height: 60px;
+    background-color: rgb(205, 46, 46);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+  }
+  .xiao img {
+    position: absolute;
+    left: 0px;
+  }
+  #big {
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 158px;
+    margin-top: 20px;
+  }
+  img{
+    border-radius: 10px
+  }

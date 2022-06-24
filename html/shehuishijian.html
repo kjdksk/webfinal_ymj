@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>社会实践</title>
+    <link rel="stylesheet" href="../css/shehuishijian.css">
+  </head>
+  <!-- 此网页主要实现表单类型，网上看到一个渐变色的视频，就插入做了一个伪动态页面 -->
+  <body>
+    <div class="form">
+      <form action="">
+        <h1>社会实践信息录入登记</h1>
+        <div class="txtb">
+          <label for="">活动名称:</label>
+          <input type="text" placeholder="此次活动主题" />
+        </div>
+        <div class="txtb">
+          <label for="">主办单位:</label>
+          <input type="text" placeholder="主办单位名称" />
+        </div>
+        <div style="width: 100%;height: 50px; text-align: center;line-height: 50px; border: 1px solid #aaa;border-radius: 10px;margin: 8px 0;">
+          <label for="" style="margin-left: -460px;">负责人</label>
+          <input type="radio" name="yes">是
+          <input type="radio" name="no">否
+        </div>
+        <div style="width: 100%;height: 50px; text-align: center;line-height: 50px; border: 1px solid #aaa;border-radius: 10px;margin: 8px 0;">
+            <label for="" style="margin-left: -200px;">收获：</label>
+            <input type="checkbox" >人际关系
+            <input type="checkbox" >专业技术
+            <input type="checkbox" >生活技能
+            <input type="checkbox" >物质奖励
+          </div>
+        <select style="width: 100%;height: 50px; text-align: center;line-height: 50px; border: 1px solid #aaa;border-radius: 10px;margin: 8px 0;">
+            <option value="ser">服务型</option>
+    
+            <option value="cou">课程型</option>
+    
+            <option value="stu">学习型</option>
+    
+            <option value="pro">项目型</option>
+        </select>
+        <div class="txtb">
+          <label for="">获得奖项:</label>
+          <input type="text" placeholder="如未获得奖项请填无" />
+        </div>
+        <div class="txtb">
+          <label for="">活动其他说明:</label>
+          <textarea name="" id="other"></textarea>
+        </div>
+        <span class="btn">保存</span>
+      </form>
+    </div>
+  </body>
+</html>
